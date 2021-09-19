@@ -1,4 +1,5 @@
-    <script src="{{ asset('backend/assets/lib/jquery/jquery.js') }}"></script>
+    {{-- <script src="{{ asset('backend/assets/lib/jquery/jquery.js') }}"></script> --}}
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <script src="{{ asset('backend/assets/lib/popper.js/popper.js') }}"></script>
     <script src="{{ asset('backend/assets/lib/bootstrap/bootstrap.js') }}"></script>
     <script src="{{ asset('backend/assets/lib/jquery-ui/jquery-ui.js') }}"></script>
@@ -15,3 +16,15 @@
     <script src="{{ asset('backend/assets/js/starlight.js') }}"></script>
     <script src="{{ asset('backend/assets/js/ResizeSensor.js') }}"></script>
     <script src="{{ asset('backend/assets/js/dashboard.js') }}"></script>
+
+    {{-- data table script --}}
+    
+    <script src="https://cdn.datatables.net/1.11.2/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.11.2/js/dataTables.bootstrap4.min.js"></script>
+
+
+{{-- 
+    <script src="{{ asset('backend/assets/lib/highlightjs/highlight.pack.js') }}"></script>
+    <script src="{{ asset('backend/assets/lib/datatables/jquery.dataTables.js') }}"></script>
+    <script src="{{ asset('backend/assets/lib/datatables-responsive/dataTables.responsive.js') }}"></script>
+    <script src="{{ asset('backend/assets/lib/select2/js/select2.min.js') }}"></script> --}}

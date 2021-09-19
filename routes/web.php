@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Backend\RolesController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -21,3 +22,10 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+/***
+ * Admin Routes
+ */
+Route::group(['prefix'=>'admin','as'=>'admin.'], function(){
+    Route::resource('/roles', RolesController::class );
+});
